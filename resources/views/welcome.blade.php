@@ -38,8 +38,9 @@
             <hr>
             <p class="lead"></p>
           </header>
+
           @forelse($series as $s)
-            <div class="card mb-30">
+            <div class="card mb-30" style="direction:rtl">
               <div class="row">
                 <div class="col-12 col-md-4 align-self-center">
                   <a href=""><img src="{{ $s->image_path }}" alt="..."></a>
@@ -48,9 +49,9 @@
                 <div class="col-12 col-md-8">
                   <div class="card-block">
                     <h4 class="card-title">{{ $s->title }}</h4>
-                   
+
                     <p class="card-text">{{ $s->description }}</p>
-                    <a class="fw-600 fs-12" href="{{ route('series', $s->slug) }}">Read more <i class="fa fa-chevron-right fs-9 pl-8"></i></a>
+                    <a class="fw-600 fs-12" href="{{ route('series', $s->slug) }}">Read more <i class="fa fa-chevron-left fs-9 pl-8"></i></a>
                   </div>
                 </div>
               </div>

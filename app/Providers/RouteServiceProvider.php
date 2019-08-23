@@ -42,7 +42,7 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapApiRoutes();
 
         $this->mapWebRoutes();
-
+// ---- define a middleware for routes
         $this->mapAdminRoutes();
     }
 

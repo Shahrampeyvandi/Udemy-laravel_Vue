@@ -375,12 +375,6 @@ module.exports = {
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(17);
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports) {
 
 /* globals __VUE_SSR_CONTEXT__ */
@@ -475,6 +469,12 @@ module.exports = function normalizeComponent (
   }
 }
 
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(17);
 
 /***/ }),
 /* 3 */
@@ -1072,7 +1072,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(13);
-module.exports = __webpack_require__(60);
+module.exports = __webpack_require__(57);
 
 
 /***/ }),
@@ -1093,13 +1093,13 @@ window.noty = function (notification) {
 window.handleErrors = function (error) {
 	if (error.response.status == 422) {
 		window.noty({
-			message: 'You had validation errors. Please try again.',
+			message: 'پیام معتبر نمیباشد',
 			type: 'danger'
 		});
 	}
 
 	window.noty({
-		message: 'Something went wrong . Please refresh the page.',
+		message: 'خطا... لطفا مجددا تلاش کنید',
 		type: 'danger'
 	});
 };
@@ -1109,7 +1109,7 @@ Vue.component('vue-login', __webpack_require__(39));
 Vue.component('vue-stripe', __webpack_require__(42));
 Vue.component('vue-player', __webpack_require__(45));
 Vue.component('vue-lessons', __webpack_require__(51));
-Vue.component('vue-update-card', __webpack_require__(57));
+Vue.component('vue-update-card', __webpack_require__(54));
 var app = new Vue({
 	el: '#app'
 });
@@ -1121,7 +1121,7 @@ var app = new Vue({
 
 window._ = __webpack_require__(15);
 
-window.axios = __webpack_require__(1);
+window.axios = __webpack_require__(2);
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
@@ -29221,7 +29221,7 @@ module.exports = Vue$3;
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var Component = __webpack_require__(2)(
+var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(37),
   /* template */
@@ -29298,7 +29298,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var Component = __webpack_require__(2)(
+var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(40),
   /* template */
@@ -29339,7 +29339,7 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
 //
 //
@@ -29552,12 +29552,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "custom-control-indicator"
   }), _vm._v(" "), _c('span', {
     staticClass: "custom-control-description"
-  }, [_vm._v("Remember me")])]), _vm._v(" "), _c('a', {
+  }, [_vm._v("مرا به خاطر بسپار")])]), _vm._v(" "), _c('a', {
     staticClass: "text-muted hover-primary fs-13",
     attrs: {
       "href": "#"
     }
-  }, [_vm._v("Forgot password?")])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("رمز عبور خود را فراموش کرده اید؟")])]), _vm._v(" "), _c('div', {
     staticClass: "form-group"
   }, [_c('button', {
     staticClass: "btn btn-bold btn-block btn-primary",
@@ -29593,7 +29593,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var Component = __webpack_require__(2)(
+var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(43),
   /* template */
@@ -29636,7 +29636,7 @@ module.exports = Component.exports
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sweetalert__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sweetalert___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_sweetalert__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
 //
 //
@@ -29730,7 +29730,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var Component = __webpack_require__(2)(
+var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(46),
   /* template */
@@ -29771,7 +29771,7 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_sweetalert__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_sweetalert___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_sweetalert__);
@@ -32181,11 +32181,11 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var Component = __webpack_require__(2)(
+var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(52),
   /* template */
-  __webpack_require__(56),
+  __webpack_require__(53),
   /* styles */
   null,
   /* scopeId */
@@ -32222,8 +32222,10 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
+//
+//
 //
 //
 //
@@ -32267,6 +32269,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		});
 
 		this.$on('lesson_updated', function (lesson) {
+			//search current lesson in lessons array where id and replace with old lesson
 			var lessonIndex = _this.lessons.findIndex(function (l) {
 				return lesson.id == l.id;
 			});
@@ -32280,10 +32283,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	},
 
 	components: {
-		"create-lesson": __webpack_require__(53)
+		"create-lesson": __webpack_require__(67)
 	},
 	data: function data() {
 		return {
+			// 2- change recive data to Json to use
 			lessons: JSON.parse(this.default_lessons)
 		};
 	},
@@ -32296,11 +32300,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		deleteLesson: function deleteLesson(id, key) {
 			var _this2 = this;
 
-			if (confirm('Are you sure you wanna delete ?')) {
+			if (confirm('ایا مطمین هستید؟')) {
 				__WEBPACK_IMPORTED_MODULE_0_axios___default.a.delete('/admin/' + this.series_id + '/lessons/' + id).then(function (resp) {
+					console.log(resp);
+					// delete lesson in lessons array
 					_this2.lessons.splice(key, 1);
 					window.noty({
-						message: 'Lesson deleted successfully',
+						message: 'حذف با موفقیت انجام شد!',
 						type: 'success'
 					});
 				}).catch(function (error) {
@@ -32308,6 +32314,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				});
 			}
 		},
+
+		// --- emit event to child component after click to edit
 		editLesson: function editLesson(lesson) {
 			var seriesId = this.series_id;
 			this.$emit('edit_lesson', { lesson: lesson, seriesId: seriesId });
@@ -32319,12 +32327,195 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "container",
+    staticStyle: {
+      "color": "black",
+      "font-weight": "bold"
+    }
+  }, [_c('h1', {
+    staticClass: "text-center"
+  }, [_c('button', {
+    staticClass: "btn btn-primary",
+    on: {
+      "click": function($event) {
+        _vm.createNewLesson()
+      }
+    }
+  }, [_vm._v("\n\t\t\tCreate New Lesson\n\t\t")])]), _vm._v(" "), _c('div', {}, [_c('ul', {
+    staticClass: "list-group d-flex"
+  }, _vm._l((_vm.lessons), function(lesson, key) {
+    return _c('li', {
+      staticClass: "list-group-item d-flex justify-content-between"
+    }, [_c('p', [_vm._v(_vm._s(lesson.title))]), _vm._v(" "), _c('p', [_c('button', {
+      staticClass: "btn btn-primary btn-xs",
+      on: {
+        "click": function($event) {
+          _vm.editLesson(lesson)
+        }
+      }
+    }, [_vm._v("\n\t\t\t\t\t\tویرایش\n\t\t\t\t\t")]), _vm._v(" "), _c('button', {
+      staticClass: "btn btn-danger btn-xs",
+      on: {
+        "click": function($event) {
+          _vm.deleteLesson(lesson.id, key)
+        }
+      }
+    }, [_vm._v("\n\t\t\t\t\t\tحذف\n\t\t\t\t\t")])])])
+  }))]), _vm._v(" "), _c('create-lesson')], 1)
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-7e2227be", module.exports)
+  }
+}
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
 var disposed = false
-var Component = __webpack_require__(2)(
+var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(54),
-  /* template */
   __webpack_require__(55),
+  /* template */
+  __webpack_require__(56),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "/home/shahram/Desktop/bahdcasts-master/resources/assets/js/components/UpdateCard.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] UpdateCard.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-91298bfa", Component.options)
+  } else {
+    hotAPI.reload("data-v-91298bfa", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 55 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sweetalert__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sweetalert___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_sweetalert__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['email'],
+    mounted: function mounted() {
+        this.handler = StripeCheckout.configure({
+            key: 'pk_test_2VnQL9Cic4hLPeiYtvHellBI',
+            image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+            locale: 'auto',
+            allowRememberMe: false,
+            token: function token(_token) {
+                __WEBPACK_IMPORTED_MODULE_0_sweetalert___default()({ text: 'Please wait while we update your card details ...', buttons: false });
+                __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('/card/update', {
+                    stripeToken: _token.id
+                }).then(function (resp) {
+                    __WEBPACK_IMPORTED_MODULE_0_sweetalert___default()({ text: 'Successfully updated card details', icon: 'success' }).then(function () {
+                        window.location = '';
+                    });
+                });
+            }
+        });
+    },
+    data: function data() {
+        return {
+            handler: null
+        };
+    },
+
+    methods: {
+        update: function update() {
+
+            this.handler.open({
+                name: 'Bahdcasts',
+                description: 'Bahdcasts Subscription',
+                email: this.email,
+                panelLabel: 'Update card details'
+            });
+        }
+    }
+});
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('button', {
+    staticClass: "btn btn-success",
+    on: {
+      "click": _vm.update
+    }
+  }, [_vm._v("Update card details")])])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-91298bfa", module.exports)
+  }
+}
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */,
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(68),
+  /* template */
+  __webpack_require__(69),
   /* styles */
   null,
   /* scopeId */
@@ -32356,12 +32547,12 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 54 */
+/* 68 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -32420,9 +32611,11 @@ var Lesson = function Lesson(lesson) {
 	mounted: function mounted() {
 		var _this = this;
 
+		// 4-fire the event and show modal to create
 		this.$parent.$on('create_new_lesson', function (seriesId) {
 			_this.seriesId = seriesId;
 			_this.editing = false;
+			//baraye halate create abject lesson ra khali taarif mikonim va baraye edit baraks
 			_this.lesson = new Lesson({});
 			$('#createLesson').modal();
 		});
@@ -32450,10 +32643,12 @@ var Lesson = function Lesson(lesson) {
 	},
 
 	methods: {
+		// 5- createLesson() for store lesson (use backtik in post method)
 		createLesson: function createLesson() {
 			var _this2 = this;
 
 			__WEBPACK_IMPORTED_MODULE_0_axios___default.a.post('/admin/' + this.seriesId + '/lessons', this.lesson).then(function (resp) {
+				console.log(resp);
 				_this2.$parent.$emit('lesson_created', resp.data);
 				$('#createLesson').modal('hide');
 			}).catch(function (error) {
@@ -32465,6 +32660,7 @@ var Lesson = function Lesson(lesson) {
 
 			__WEBPACK_IMPORTED_MODULE_0_axios___default.a.put('/admin/' + this.seriesId + '/lessons/' + this.lessonId, this.lesson).then(function (resp) {
 				$("#createLesson").modal('hide');
+				//emit lesson_updated event in parant
 				_this3.$parent.$emit('lesson_updated', resp.data);
 			}).catch(function (error) {
 				window.handleErrors(error);
@@ -32474,7 +32670,7 @@ var Lesson = function Lesson(lesson) {
 });
 
 /***/ }),
-/* 55 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -32678,180 +32874,6 @@ if (false) {
      require("vue-hot-reload-api").rerender("data-v-a6381eec", module.exports)
   }
 }
-
-/***/ }),
-/* 56 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "container",
-    staticStyle: {
-      "color": "black",
-      "font-weight": "bold"
-    }
-  }, [_c('h1', {
-    staticClass: "text-center"
-  }, [_c('button', {
-    staticClass: "btn btn-primary",
-    on: {
-      "click": function($event) {
-        _vm.createNewLesson()
-      }
-    }
-  }, [_vm._v("\n\t\t\tCreate New Lesson\n\t\t")])]), _vm._v(" "), _c('div', {}, [_c('ul', {
-    staticClass: "list-group d-flex"
-  }, _vm._l((_vm.lessons), function(lesson, key) {
-    return _c('li', {
-      staticClass: "list-group-item d-flex justify-content-between"
-    }, [_c('p', [_vm._v(_vm._s(lesson.title))]), _vm._v(" "), _c('p', [_c('button', {
-      staticClass: "btn btn-primary btn-xs",
-      on: {
-        "click": function($event) {
-          _vm.editLesson(lesson)
-        }
-      }
-    }, [_vm._v("\n\t\t\t\t\t\tEdit\n\t\t\t\t\t")]), _vm._v(" "), _c('button', {
-      staticClass: "btn btn-danger btn-xs",
-      on: {
-        "click": function($event) {
-          _vm.deleteLesson(lesson.id, key)
-        }
-      }
-    }, [_vm._v("\n\t\t\t\t\t\tDelete\n\t\t\t\t\t")])])])
-  }))]), _vm._v(" "), _c('create-lesson')], 1)
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-7e2227be", module.exports)
-  }
-}
-
-/***/ }),
-/* 57 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var Component = __webpack_require__(2)(
-  /* script */
-  __webpack_require__(58),
-  /* template */
-  __webpack_require__(59),
-  /* styles */
-  null,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
-)
-Component.options.__file = "/home/shahram/Desktop/bahdcasts-master/resources/assets/js/components/UpdateCard.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] UpdateCard.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-91298bfa", Component.options)
-  } else {
-    hotAPI.reload("data-v-91298bfa", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 58 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sweetalert__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sweetalert___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_sweetalert__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['email'],
-    mounted: function mounted() {
-        this.handler = StripeCheckout.configure({
-            key: 'pk_test_2VnQL9Cic4hLPeiYtvHellBI',
-            image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
-            locale: 'auto',
-            allowRememberMe: false,
-            token: function token(_token) {
-                __WEBPACK_IMPORTED_MODULE_0_sweetalert___default()({ text: 'Please wait while we update your card details ...', buttons: false });
-                __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('/card/update', {
-                    stripeToken: _token.id
-                }).then(function (resp) {
-                    __WEBPACK_IMPORTED_MODULE_0_sweetalert___default()({ text: 'Successfully updated card details', icon: 'success' }).then(function () {
-                        window.location = '';
-                    });
-                });
-            }
-        });
-    },
-    data: function data() {
-        return {
-            handler: null
-        };
-    },
-
-    methods: {
-        update: function update() {
-
-            this.handler.open({
-                name: 'Bahdcasts',
-                description: 'Bahdcasts Subscription',
-                email: this.email,
-                panelLabel: 'Update card details'
-            });
-        }
-    }
-});
-
-/***/ }),
-/* 59 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('button', {
-    staticClass: "btn btn-success",
-    on: {
-      "click": _vm.update
-    }
-  }, [_vm._v("Update card details")])])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-91298bfa", module.exports)
-  }
-}
-
-/***/ }),
-/* 60 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

@@ -83,7 +83,7 @@ class SeriesController extends Controller
     {
         $request->updateSeries($series);
 
-        session()->flash('success', 'Successfully updated series');
+        session()->flash('success', 'اپدیت با موفقیت انجام شد!!');
         return redirect()->route('series.index');
     }
 

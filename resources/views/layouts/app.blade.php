@@ -25,7 +25,7 @@
 
     <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky">
       <div class="container">
-        
+
         <div class="topbar-left">
           <button class="topbar-toggler">&#9776;</button>
           <a class="topbar-brand" href="/" style="color: white;font-size:20px">
@@ -38,6 +38,7 @@
           <ul class="topbar-nav nav">
             <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
             @auth
+              <li class="nav-item"><a href="{{ route('series.index') }}" class="nav-link">مدیریت دوره ها</a></li>
 
                   <li class="nav-item"><a href="{{ route('series.create') }}" class="nav-link">Create series</a></li>
               <li class="nav-item">
@@ -52,7 +53,7 @@
 
 
             @endauth
-            <li class="nav-item"><a href="{{ route('all-series') }}" class="nav-link">All series</a></li>
+            {{-- <li class="nav-item"><a href="{{ route('all-series') }}" class="nav-link">All series</a></li> --}}
 
             @guest
               <li class="nav-item"><a href="{{ route('all-series') }}" class="nav-link">مشاهده همه</a></li>

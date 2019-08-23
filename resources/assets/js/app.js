@@ -3,7 +3,7 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
-window.events = new Vue() 
+window.events = new Vue()
 
 window.noty = function(notification) {
 	window.events.$emit('notification', notification)
@@ -12,13 +12,13 @@ window.noty = function(notification) {
 window.handleErrors = function(error) {
 	if(error.response.status == 422) {
  		window.noty({
-			message: 'You had validation errors. Please try again.',
+			message: 'پیام معتبر نمیباشد',
 			type: 'danger'
 		})
  	}
 
  	window.noty({
-		message: 'Something went wrong . Please refresh the page.',
+		message: 'خطا... لطفا مجددا تلاش کنید',
 		type: 'danger'
 	})
 }

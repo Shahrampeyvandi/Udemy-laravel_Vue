@@ -75,7 +75,7 @@ class LessonsController extends Controller
     public function update(Series $series, Lesson $lesson, UpdateLessonRequest $request)
     {
         $lesson->update($request->all());
-
+// return a fresh copy as lesson
         return $lesson->fresh();
     }
 

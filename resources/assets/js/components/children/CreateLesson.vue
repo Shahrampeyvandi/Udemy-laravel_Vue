@@ -51,10 +51,11 @@
 
 	export default {
 		mounted() {
-			<!-- 4-fire the event and show modal to create -->
+			// 4-fire the event and show modal to create
 			this.$parent.$on('create_new_lesson', (seriesId) => {
 				this.seriesId = seriesId
 				this.editing = false
+				//baraye halate create abject lesson ra khali taarif mikonim va baraye edit baraks
 				this.lesson = new Lesson({}) 
 				$('#createLesson').modal()
 			})
@@ -67,18 +68,18 @@
 
 				$('#createLesson').modal()
 			})
-		}, 
+		},
 		data() {
 			return {
 				lesson: {},
 				seriesId: '',
 				editing: false,
 				lessonId: null,
-				premium: false 
+				premium: false
 			}
 		},
 		methods: {
-			<!-- 5- createLesson() for store lesson (use backtik in post method)   -->
+			// 5- createLesson() for store lesson (use backtik in post method)
 			createLesson() {
 				Axios.post(`/admin/${this.seriesId}/lessons`, this.lesson).then(resp => {
 					console.log(resp);
@@ -92,6 +93,7 @@
 				Axios.put(`/admin/${this.seriesId}/lessons/${this.lessonId}`, this.lesson)
 				 .then(resp => {
 				 	$("#createLesson").modal('hide')
+					 //emit lesson_updated event in parant
 				 	this.$parent.$emit('lesson_updated', resp.data)
 				 }).catch(error => {
 				 	window.handleErrors(error)
