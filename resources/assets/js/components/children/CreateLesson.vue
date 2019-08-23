@@ -51,6 +51,7 @@
 
 	export default {
 		mounted() {
+			<!-- 4-fire the event and show modal to create -->
 			this.$parent.$on('create_new_lesson', (seriesId) => {
 				this.seriesId = seriesId
 				this.editing = false

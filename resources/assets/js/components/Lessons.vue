@@ -1,6 +1,7 @@
 <template>
 	<div class="container" style="color: black; font-weight: bold;">
 		<h1 class="text-center">
+			<!-- 1-make createNewLesson()   -->
 			<button class="btn btn-primary" @click="createNewLesson()">
 				Create New Lesson
 			</button>
@@ -20,6 +21,7 @@
 				</li>
 			</ul>
 		</div>
+		<!-- 5-create lesson template -->
 		<create-lesson></create-lesson>
 	</div>
 </template>
@@ -50,6 +52,7 @@
 				})
 			})
 		},
+		<!-- import create-lesson component -->
 		components: {
 			"create-lesson": require('./children/CreateLesson.vue')
 		},
@@ -63,6 +66,7 @@
 			
 		},
 		methods: {
+			<!-- 3-emit method to child component and pass series_id  -->
 			createNewLesson() {
 				this.$emit('create_new_lesson', this.series_id)
 			},
