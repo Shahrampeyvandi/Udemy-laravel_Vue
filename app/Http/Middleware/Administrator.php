@@ -16,6 +16,8 @@ class Administrator
      */
     public function handle($request, Closure $next)
     {
+        // 2- create a custon config file and check value with isAdmin() method
+
         if(auth()->check()) {
             if(auth()->user()->isAdmin()) {
                 return $next($request);

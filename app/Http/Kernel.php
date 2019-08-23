@@ -41,6 +41,7 @@ class Kernel extends HttpKernel
             'throttle:60,1',
             'bindings',
         ],
+        // 1- php artisan make:middleware adminstrator
         'admin' => [
             'web',
             \Bahdcasts\Http\Middleware\Administrator::class
