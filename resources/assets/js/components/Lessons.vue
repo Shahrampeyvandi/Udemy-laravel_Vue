@@ -55,6 +55,7 @@
 		},
 		data() {
 			return {
+				// 2- change recive data to Json to use
 				lessons: JSON.parse(this.default_lessons)
 			}
 		},

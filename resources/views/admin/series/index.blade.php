@@ -8,7 +8,7 @@
       <div class="col-12 col-lg-8 offset-lg-2">
 
         <h1>{{ $series->title }}</h1>
-        <p class="fs-20 opacity-70">Customize your series lessons</p>
+        <p class="fs-20 opacity-70">بخش های خود را مدیریت کنید</p>
 
       </div>
     </div>
@@ -23,6 +23,7 @@
 
       <div class="row gap-y">
         <div class="col-12">
+          {{-- 1- pass lessons to Vue component with props --}}
           <vue-lessons default_lessons="{{ $series->lessons }}" series_id="{{ $series->id }}"></vue-lessons>
         </div>
       </div>
