@@ -38,6 +38,13 @@ class SeriesController extends Controller
      */
     public function store(CreateSeriesRequest $request)
     {
+        /* ---
+        1-php artisan make:request CreateSeriesRequest
+        2- upload image
+        3-create serie
+        4-redirect back
+       ----- */
+
         return $request->uploadSeriesImage()
                 ->storeSeries();
     }

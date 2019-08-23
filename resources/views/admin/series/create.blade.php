@@ -7,7 +7,7 @@
     <div class="row">
       <div class="col-12 col-lg-8 offset-lg-2">
 
-        <h1>Create a bahd series</h1>
+        <h1>ایجاد دوره</h1>
         <p class="fs-20 opacity-70">Let's make the world a better place for coders</p>
 
       </div>
@@ -20,7 +20,15 @@
 @section('content')
   <div class="section bg-grey">
     <div class="container">
-
+      @if(session()->has('success'))
+      <div class="row">
+        <div class="col-md-12">
+          <div class="alert alert-success">
+                {{session()->get('success')}}
+          </div>
+        </div>
+      </div>
+      @endif
       <div class="row gap-y">
         <div class="col-12">
 
