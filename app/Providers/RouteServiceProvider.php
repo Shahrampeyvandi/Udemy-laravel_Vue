@@ -25,7 +25,7 @@ class RouteServiceProvider extends ServiceProvider
     public function boot()
     {
         parent::boot();
-
+    // 1- bind series_by_id to Series Model
         Route::model('series_by_id', Series::class);
         Route::bind('series_by_id', function($value){
             return Series::findOrFail($value);

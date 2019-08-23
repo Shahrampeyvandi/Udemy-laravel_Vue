@@ -78,8 +78,10 @@
 			}
 		},
 		methods: {
+			<!-- 5- createLesson() for store lesson (use backtik in post method)   -->
 			createLesson() {
 				Axios.post(`/admin/${this.seriesId}/lessons`, this.lesson).then(resp => {
+					console.log(resp);
 					this.$parent.$emit('lesson_created', resp.data)
 					$('#createLesson').modal('hide')
 				}).catch(error => {
