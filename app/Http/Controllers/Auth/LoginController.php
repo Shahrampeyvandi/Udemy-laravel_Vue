@@ -51,7 +51,7 @@ class LoginController extends Controller
      */
 
 
-    //-------- overwrite authenticated-------
+    //-------- overwrite authenticated for ajax request-------
 
 
     protected function authenticated(Request $request, $user)
@@ -74,7 +74,8 @@ class LoginController extends Controller
      */
     protected function sendFailedLoginResponse(Request $request){
 
-        // ---------  use custom Exceptions ------
+        // ---------  use custom Exceptions for fail logins------
+        // make directory Exceptions/AuthFailedExeption
         throw new AuthFailedException;
     }
 }

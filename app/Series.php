@@ -37,6 +37,7 @@ class Series extends Model
      *
      * @return string
      */
+    // set slug key for show model
     public function getRouteKeyName()
     {
         return 'slug';
