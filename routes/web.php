@@ -1,7 +1,24 @@
 <?php
 
+    /*
+    redis key & value //string
+        \Redis::set('sd','sf');
+         dd(Redis::get('sd'));
+
+   redis key & value //list
+         \Redis::lpush('names',['ali','reza']);
+         dd(\Redis::lrange('names',0,-1));
+
+    redis key & value :set
+    set is a unique and could not add to an set(store the ip address in the set)
+         Redis::sadd('credit_id' ,['1','2']);
+         dd(Redis::smembers('credit_id'));
+*/
+// Route::get('/',function(){
+
+// })
 Auth::routes();
-Route::get('/', 'FrontendController@welcome');
+ Route::get('/', 'FrontendController@welcome');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/profile/{user}', 'ProfilesController@index')->name('profile');
 Route::get('/series/{series}', 'FrontendController@series')->name('series');

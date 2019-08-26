@@ -16,6 +16,7 @@ trait Learning {
     public function completeLesson($lesson) {
         Redis::sadd("user:{$this->id}:series:{$lesson->series->id}", $lesson->id);
     }
+                                    // "user:1:series:1" => ["1" , "2"]
 
     /**
      * Get percentage completed for a series for a user
