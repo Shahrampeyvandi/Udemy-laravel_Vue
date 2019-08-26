@@ -18,10 +18,9 @@ class WatchSeriesController extends Controller
         $user = auth()->user();
 
         if($user->hasStartedSeries($series)) {
-            return redirect()->route('series.watch', [   
-                    'series' => $series->slug, 
-                    'lesson' => $user->getNextLessonToWatch($series)
-            ]);
+            //redirect to showlesson()(watch.blade.php) and show 1 lesson of series
+            //
+            return redirect()->route('series.watch', ['series' => $series->slug,'lesson' => $user->getNextLessonToWatch($series) ]);
         }
         
         return redirect()->route('series.watch', [   

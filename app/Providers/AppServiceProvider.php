@@ -2,7 +2,7 @@
 
 namespace Bahdcasts\Providers;
 
-use Blade;
+use Blade;         //create custom blade statement
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -14,6 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        //create custom blade statement
         Blade::if('hasStartedSeries', function($series) {
             return auth()->user()->hasStartedSeries($series);
         });

@@ -12,12 +12,15 @@
                     <br>
                     <br><br><br>
                     @auth
-{{--                      @hasStartedSeries($series)--}}
-                          <a href="{{ route('series.learning', $series->slug) }}" class="btn btn-lg btn-primary mr-16 btn-round">ادامه اموزش</a>
-                      @else
-                          <a href="{{ route('series.learning', $series->slug) }}" class="btn btn-lg btn-primary mr-16 btn-round">START LEARNING</a>                      
-{{--                      @endhasStartedSeries--}}
-{{--                    @else --}}
+                        @hasStartedSeries($series)
+                        {{-- @if (auth()->user()->hasStartedSeries($series))
+                            
+                        @endif --}}
+                              <a href="{{ route('series.learning', $series->slug) }}" class="btn btn-lg btn-primary mr-16 btn-round">ادامه اموزش</a>
+                          @else
+                              <a href="{{ route('series.learning', $series->slug) }}" class="btn btn-lg btn-primary mr-16 btn-round">شروع اموزش</a>                      
+                        @endhasStartedSeries
+                     @else
                           <a href="{{ route('series.learning', $series->slug) }}"  class="btn btn-lg btn-primary mr-16 btn-round">START LEARNING</a>                    
                     @endauth
                   </div>
@@ -47,7 +50,7 @@
           
           <div class="col-12 offset-md-2 col-md-8 mb-30">
             <p class="text-center">
-              {{ $series->description }}
+              {!! $series->description !!}
             </p>
           </div>
         </div>

@@ -36,7 +36,7 @@
 
         <div class="topbar-right">
           <ul class="topbar-nav nav">
-            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/">خانه</a></li>
             @auth
               <li class="nav-item"><a href="{{ route('series.index') }}" class="nav-link">مدیریت دوره ها</a></li>
 
