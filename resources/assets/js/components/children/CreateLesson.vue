@@ -3,7 +3,7 @@
 	    <div class="modal-dialog" role="document">
 	      <div class="modal-content">
 	        <div class="modal-header">
-	          <h5 class="modal-title" id="exampleModalLabel">Create new lesson</h5>
+	          <h5 class="modal-title" id="exampleModalLabel">ایجاد درس جدید</h5>
 	          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	            <span aria-hidden="true">&times;</span>
 	          </button>
@@ -13,7 +13,7 @@
 	              <input type="text" class="form-control" placeholder="Lesson title" v-model="lesson.title">
 	            </div>
 	            <div class="form-group">
-	              <input type="text" class="form-control" placeholder="Vimeo video id" v-model="lesson.video_id">
+	              <input type="text" class="form-control"  v-model="video_id">
 	            </div>
 	            <div class="form-group">
 	              <input type="number" class="form-control" placeholder="Episode number" v-model="lesson.episode_number">
@@ -69,6 +69,7 @@
 				$('#createLesson').modal()
 			})
 		},
+		
 		data() {
 			return {
 				lesson: {},
@@ -79,6 +80,9 @@
 			}
 		},
 		methods: {
+			selectFile(e) {
+				this.lesson.video_id=e.target.files[0]
+			},
 			// 5- createLesson() for store lesson (use backtik in post method)
 			createLesson() {
 				Axios.post(`/admin/${this.seriesId}/lessons`, this.lesson).then(resp => {

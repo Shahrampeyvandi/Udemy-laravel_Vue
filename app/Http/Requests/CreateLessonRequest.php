@@ -30,4 +30,36 @@ class CreateLessonRequest extends FormRequest
             'video_id' => 'required'
         ];
     }
+
+      /**
+     * Upload the series image passed in the request
+     *
+     * @return App\Http\Requests\CreateSeriesRequest
+     */
+    public function uploadLessonVideo()
+    {
+        $uploadedVideo = $this->video_id;
+
+        $this->fileName = str_slug($this->title) . '.' . $uploadedVideo->getClientOriginalExtension();
+
+        $uploadedVideo->storePubliclyAs(
+            'public/series',  $this->fileName
+        );
+
+        return $this;
+    }
+
+    public function storeLesson() 
+    {
+        $lesson = Lesson::create([
+            'title' => $this->title,
+            'description' => $this->description,
+            'episode_number'=> $this->episode_number,
+            'series_id'=>2,
+            'video_id' => 'series/' . $this->fileName
+        ]);
+
+        session()->flash('success', 'Series created successfully.');
+        return back();
+    }
 }

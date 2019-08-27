@@ -1,5 +1,11 @@
 <template>
   <div>
+      <!-- 
+           1- npm install vimeo player
+           2- add html tag to vue
+           3- import vimeo in script  
+           4-mount <vue-player> in watch.blade.php      
+       -->
     <div :data-vimeo-id="lesson.video_id" data-vimeo-width="900" v-if="lesson" id="handstick"></div>
   </div>
 </template>

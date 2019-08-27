@@ -375,6 +375,12 @@ module.exports = {
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(17);
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports) {
 
 /* globals __VUE_SSR_CONTEXT__ */
@@ -469,12 +475,6 @@ module.exports = function normalizeComponent (
   }
 }
 
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(17);
 
 /***/ }),
 /* 3 */
@@ -1072,7 +1072,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(13);
-module.exports = __webpack_require__(57);
+module.exports = __webpack_require__(60);
 
 
 /***/ }),
@@ -1109,7 +1109,7 @@ Vue.component('vue-login', __webpack_require__(39));
 Vue.component('vue-stripe', __webpack_require__(42));
 Vue.component('vue-player', __webpack_require__(45));
 Vue.component('vue-lessons', __webpack_require__(51));
-Vue.component('vue-update-card', __webpack_require__(54));
+Vue.component('vue-update-card', __webpack_require__(57));
 var app = new Vue({
 	el: '#app'
 });
@@ -1121,7 +1121,7 @@ var app = new Vue({
 
 window._ = __webpack_require__(15);
 
-window.axios = __webpack_require__(2);
+window.axios = __webpack_require__(1);
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
@@ -29221,7 +29221,7 @@ module.exports = Vue$3;
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var Component = __webpack_require__(1)(
+var Component = __webpack_require__(2)(
   /* script */
   __webpack_require__(37),
   /* template */
@@ -29298,7 +29298,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var Component = __webpack_require__(1)(
+var Component = __webpack_require__(2)(
   /* script */
   __webpack_require__(40),
   /* template */
@@ -29339,7 +29339,7 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
 //
 //
@@ -29593,7 +29593,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var Component = __webpack_require__(1)(
+var Component = __webpack_require__(2)(
   /* script */
   __webpack_require__(43),
   /* template */
@@ -29636,7 +29636,7 @@ module.exports = Component.exports
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sweetalert__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sweetalert___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_sweetalert__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
 //
 //
@@ -29730,7 +29730,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var Component = __webpack_require__(1)(
+var Component = __webpack_require__(2)(
   /* script */
   __webpack_require__(46),
   /* template */
@@ -29771,12 +29771,18 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_sweetalert__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_sweetalert___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_sweetalert__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__vimeo_player__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__vimeo_player___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__vimeo_player__);
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -32181,11 +32187,11 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var Component = __webpack_require__(1)(
+var Component = __webpack_require__(2)(
   /* script */
   __webpack_require__(52),
   /* template */
-  __webpack_require__(53),
+  __webpack_require__(56),
   /* styles */
   null,
   /* scopeId */
@@ -32222,7 +32228,7 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
 //
 //
@@ -32283,7 +32289,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	},
 
 	components: {
-		"create-lesson": __webpack_require__(67)
+		"create-lesson": __webpack_require__(53)
 	},
 	data: function data() {
 		return {
@@ -32327,195 +32333,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "container",
-    staticStyle: {
-      "color": "black",
-      "font-weight": "bold"
-    }
-  }, [_c('h1', {
-    staticClass: "text-center"
-  }, [_c('button', {
-    staticClass: "btn btn-primary",
-    on: {
-      "click": function($event) {
-        _vm.createNewLesson()
-      }
-    }
-  }, [_vm._v("\n\t\t\tCreate New Lesson\n\t\t")])]), _vm._v(" "), _c('div', {}, [_c('ul', {
-    staticClass: "list-group d-flex"
-  }, _vm._l((_vm.lessons), function(lesson, key) {
-    return _c('li', {
-      staticClass: "list-group-item d-flex justify-content-between"
-    }, [_c('p', [_vm._v(_vm._s(lesson.title))]), _vm._v(" "), _c('p', [_c('button', {
-      staticClass: "btn btn-primary btn-xs",
-      on: {
-        "click": function($event) {
-          _vm.editLesson(lesson)
-        }
-      }
-    }, [_vm._v("\n\t\t\t\t\t\tویرایش\n\t\t\t\t\t")]), _vm._v(" "), _c('button', {
-      staticClass: "btn btn-danger btn-xs",
-      on: {
-        "click": function($event) {
-          _vm.deleteLesson(lesson.id, key)
-        }
-      }
-    }, [_vm._v("\n\t\t\t\t\t\tحذف\n\t\t\t\t\t")])])])
-  }))]), _vm._v(" "), _c('create-lesson')], 1)
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-7e2227be", module.exports)
-  }
-}
-
-/***/ }),
-/* 54 */
-/***/ (function(module, exports, __webpack_require__) {
-
 var disposed = false
-var Component = __webpack_require__(1)(
+var Component = __webpack_require__(2)(
   /* script */
+  __webpack_require__(54),
+  /* template */
   __webpack_require__(55),
-  /* template */
-  __webpack_require__(56),
-  /* styles */
-  null,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
-)
-Component.options.__file = "/home/shahram/Desktop/bahdcasts-master/resources/assets/js/components/UpdateCard.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] UpdateCard.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-91298bfa", Component.options)
-  } else {
-    hotAPI.reload("data-v-91298bfa", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 55 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sweetalert__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sweetalert___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_sweetalert__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['email'],
-    mounted: function mounted() {
-        this.handler = StripeCheckout.configure({
-            key: 'pk_test_2VnQL9Cic4hLPeiYtvHellBI',
-            image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
-            locale: 'auto',
-            allowRememberMe: false,
-            token: function token(_token) {
-                __WEBPACK_IMPORTED_MODULE_0_sweetalert___default()({ text: 'Please wait while we update your card details ...', buttons: false });
-                __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('/card/update', {
-                    stripeToken: _token.id
-                }).then(function (resp) {
-                    __WEBPACK_IMPORTED_MODULE_0_sweetalert___default()({ text: 'Successfully updated card details', icon: 'success' }).then(function () {
-                        window.location = '';
-                    });
-                });
-            }
-        });
-    },
-    data: function data() {
-        return {
-            handler: null
-        };
-    },
-
-    methods: {
-        update: function update() {
-
-            this.handler.open({
-                name: 'Bahdcasts',
-                description: 'Bahdcasts Subscription',
-                email: this.email,
-                panelLabel: 'Update card details'
-            });
-        }
-    }
-});
-
-/***/ }),
-/* 56 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('button', {
-    staticClass: "btn btn-success",
-    on: {
-      "click": _vm.update
-    }
-  }, [_vm._v("Update card details")])])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-91298bfa", module.exports)
-  }
-}
-
-/***/ }),
-/* 57 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */,
-/* 62 */,
-/* 63 */,
-/* 64 */,
-/* 65 */,
-/* 66 */,
-/* 67 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var Component = __webpack_require__(1)(
-  /* script */
-  __webpack_require__(68),
-  /* template */
-  __webpack_require__(69),
   /* styles */
   null,
   /* scopeId */
@@ -32547,12 +32370,12 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 68 */
+/* 54 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -32643,6 +32466,10 @@ var Lesson = function Lesson(lesson) {
 	},
 
 	methods: {
+		selectFile: function selectFile(e) {
+			this.lesson.video_id = e.target.files[0];
+		},
+
 		// 5- createLesson() for store lesson (use backtik in post method)
 		createLesson: function createLesson() {
 			var _this2 = this;
@@ -32670,7 +32497,7 @@ var Lesson = function Lesson(lesson) {
 });
 
 /***/ }),
-/* 69 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -32721,21 +32548,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.lesson.video_id),
-      expression: "lesson.video_id"
+      value: (_vm.video_id),
+      expression: "video_id"
     }],
     staticClass: "form-control",
     attrs: {
-      "type": "text",
-      "placeholder": "Vimeo video id"
+      "type": "text"
     },
     domProps: {
-      "value": (_vm.lesson.video_id)
+      "value": (_vm.video_id)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.lesson.video_id = $event.target.value
+        _vm.video_id = $event.target.value
       }
     }
   })]), _vm._v(" "), _c('div', {
@@ -32854,7 +32680,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "exampleModalLabel"
     }
-  }, [_vm._v("Create new lesson")]), _vm._v(" "), _c('button', {
+  }, [_vm._v("ایجاد درس جدید")]), _vm._v(" "), _c('button', {
     staticClass: "close",
     attrs: {
       "type": "button",
@@ -32874,6 +32700,180 @@ if (false) {
      require("vue-hot-reload-api").rerender("data-v-a6381eec", module.exports)
   }
 }
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "container",
+    staticStyle: {
+      "color": "black",
+      "font-weight": "bold"
+    }
+  }, [_c('h1', {
+    staticClass: "text-center"
+  }, [_c('button', {
+    staticClass: "btn btn-primary",
+    on: {
+      "click": function($event) {
+        _vm.createNewLesson()
+      }
+    }
+  }, [_vm._v("\n\t\t\tCreate New Lesson\n\t\t")])]), _vm._v(" "), _c('div', {}, [_c('ul', {
+    staticClass: "list-group d-flex"
+  }, _vm._l((_vm.lessons), function(lesson, key) {
+    return _c('li', {
+      staticClass: "list-group-item d-flex justify-content-between"
+    }, [_c('p', [_vm._v(_vm._s(lesson.title))]), _vm._v(" "), _c('p', [_c('button', {
+      staticClass: "btn btn-primary btn-xs",
+      on: {
+        "click": function($event) {
+          _vm.editLesson(lesson)
+        }
+      }
+    }, [_vm._v("\n\t\t\t\t\t\tویرایش\n\t\t\t\t\t")]), _vm._v(" "), _c('button', {
+      staticClass: "btn btn-danger btn-xs",
+      on: {
+        "click": function($event) {
+          _vm.deleteLesson(lesson.id, key)
+        }
+      }
+    }, [_vm._v("\n\t\t\t\t\t\tحذف\n\t\t\t\t\t")])])])
+  }))]), _vm._v(" "), _c('create-lesson')], 1)
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-7e2227be", module.exports)
+  }
+}
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var Component = __webpack_require__(2)(
+  /* script */
+  __webpack_require__(58),
+  /* template */
+  __webpack_require__(59),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "/home/shahram/Desktop/bahdcasts-master/resources/assets/js/components/UpdateCard.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] UpdateCard.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-91298bfa", Component.options)
+  } else {
+    hotAPI.reload("data-v-91298bfa", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 58 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sweetalert__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sweetalert___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_sweetalert__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['email'],
+    mounted: function mounted() {
+        this.handler = StripeCheckout.configure({
+            key: 'pk_test_2VnQL9Cic4hLPeiYtvHellBI',
+            image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+            locale: 'auto',
+            allowRememberMe: false,
+            token: function token(_token) {
+                __WEBPACK_IMPORTED_MODULE_0_sweetalert___default()({ text: 'Please wait while we update your card details ...', buttons: false });
+                __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('/card/update', {
+                    stripeToken: _token.id
+                }).then(function (resp) {
+                    __WEBPACK_IMPORTED_MODULE_0_sweetalert___default()({ text: 'Successfully updated card details', icon: 'success' }).then(function () {
+                        window.location = '';
+                    });
+                });
+            }
+        });
+    },
+    data: function data() {
+        return {
+            handler: null
+        };
+    },
+
+    methods: {
+        update: function update() {
+
+            this.handler.open({
+                name: 'Bahdcasts',
+                description: 'Bahdcasts Subscription',
+                email: this.email,
+                panelLabel: 'Update card details'
+            });
+        }
+    }
+});
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('button', {
+    staticClass: "btn btn-success",
+    on: {
+      "click": _vm.update
+    }
+  }, [_vm._v("Update card details")])])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-91298bfa", module.exports)
+  }
+}
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

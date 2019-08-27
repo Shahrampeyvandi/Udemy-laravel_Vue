@@ -40,7 +40,9 @@ class LessonsController extends Controller
     public function store(Series $series, CreateLessonRequest $request)
     {
         // 4- create lesson
-        return $series->lessons()->create($request->all());
+        // return $request->all();
+        dd($request->all());
+        // $request->uploadLessonVideo()->storeLesson();
     }
 
     /**

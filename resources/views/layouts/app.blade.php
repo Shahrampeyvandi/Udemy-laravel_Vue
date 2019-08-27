@@ -36,14 +36,14 @@
 
         <div class="topbar-right">
           <ul class="topbar-nav nav">
-            <li class="nav-item"><a class="nav-link" href="/">خانه</a></li>
             @auth
+                          <li class="nav-item"><a href="{{ url('logout') }}" class="nav-link">خروج</a></li>
+
               <li class="nav-item"><a href="{{ route('series.index') }}" class="nav-link">مدیریت دوره ها</a></li>
 
-                  <li class="nav-item"><a href="{{ route('series.create') }}" class="nav-link">Create series</a></li>
+                  <li class="nav-item"><a href="{{ route('series.create') }}" class="nav-link">ایجاد دوره</a></li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ route('profile', auth()->user()->username) }}">Hey {{ auth()->user()->name  }}</a></li>
-              <li class="nav-item"><a href="{{ url('logout') }}" class="nav-link">خروج</a></li>
+                <a class="nav-link" href="{{ route('profile', auth()->user()->username) }}">{{ auth()->user()->name  }} سلام </a></li>
 
             @else
               <li class="nav-item"><a href="{{ route('series.index') }}" class="nav-link">All series</a></li>
@@ -54,6 +54,7 @@
 
             @endauth
             {{-- <li class="nav-item"><a href="{{ route('all-series') }}" class="nav-link">All series</a></li> --}}
+            <li class="nav-item"><a class="nav-link" href="/">خانه</a></li>
 
             @guest
               <li class="nav-item"><a href="{{ route('all-series') }}" class="nav-link">مشاهده همه</a></li>

@@ -29,6 +29,9 @@ class Lesson extends Model
      *
      * @return \Bahdcasts\Lesson
      */
+
+
+     //-------------- return the first episode greather than current episode -------------
     public function getNextLesson() {
         $nextLesson = $this->series->lessons()->where('episode_number', '>', $this->episode_number)
                     ->orderBy('episode_number', 'asc')
